@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "langchain-treza"
+version = "0.1.0"
+description = "Treza tools for LangChain: generate AI pictures and videos and run Treza pipelines, with a price cap on every render."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+authors = [{ name = "Treza Labs, Inc.", email = "hello@trezalabs.com" }]
+keywords = ["langchain", "treza", "ai video", "image generation", "video generation", "tools"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "langchain-core>=0.3.0,<2",
+    "requests>=2.31,<3",
+]
+
+[project.urls]
+Homepage = "https://www.trezalabs.com"
+Repository = "https://github.com/treza-labs/langchain-treza"
+Issues = "https://github.com/treza-labs/langchain-treza/issues"
+
+[dependency-groups]
+dev = ["pytest>=8", "langchain-tests>=0.3"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["langchain_treza"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
