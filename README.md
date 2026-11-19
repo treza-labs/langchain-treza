@@ -50,7 +50,7 @@ from langchain.agents import create_agent
 from langchain_treza import TrezaToolkit
 
 tools = TrezaToolkit(max_cost_usd=1.00).get_tools()
-agent = create_agent("anthropic:claude-sonnet-4-5", tools)
+agent = create_agent("anthropic:claude-sonnet-5-5", tools)
 agent.invoke({"messages": [{"role": "user", "content": "Make a 4 second vertical clip of a fox in snow."}]})
 ```
 
