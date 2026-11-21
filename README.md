@@ -2,6 +2,12 @@
 
 [Treza](https://www.trezalabs.com) tools for LangChain and LangGraph. An agent can generate AI pictures and video clips and run your saved Treza pipelines. Treza prices every render first, and a `max_cost_usd` you set stops any render that costs more, with nothing spent.
 
+## What Treza makes
+
+![Four short clips made with Treza: a red hover car racing through a neon city, an astronaut walking over a Martian dune at sunset, an orchid mantis on a leaf, and espresso pouring into a cup](https://raw.githubusercontent.com/treza-labs/treza-labs/main/assets/treza-demo.gif)
+
+These clips were made with [Treza](https://www.trezalabs.com), and the [LangChain integration page](https://www.trezalabs.com/integrations/langchain) shows how to set up these tools.
+
 ## Install
 
 ```bash
